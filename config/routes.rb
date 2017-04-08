@@ -1,4 +1,13 @@
 Rails.application.routes.draw do
+  namespace :admin do
+    resources :users
+resources :conversations
+resources :messages
+resources :admin_users
+
+    root to: "users#index"
+  end
+
   get 'welcome/landing'
 
   get 'welcome/index'
