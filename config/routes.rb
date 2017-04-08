@@ -4,6 +4,7 @@ Rails.application.routes.draw do
 resources :conversations
 resources :messages
 resources :admin_users
+resources :ta_users
 
     root to: "users#index"
   end
